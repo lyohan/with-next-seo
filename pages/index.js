@@ -14,19 +14,11 @@ export default function Home() {
           description: 'Open Graph Description',
           images: [
             {
-              url: 'https://www.example.ie/og-image-01.jpg',
+              url: 'https://cdn.pixabay.com/photo/2021/08/03/07/03/orange-6518675_960_720.jpg',
               width: 800,
               height: 600,
               alt: 'Og Image Alt',
             },
-            {
-              url: 'https://www.example.ie/og-image-02.jpg',
-              width: 900,
-              height: 800,
-              alt: 'Og Image Alt Second',
-            },
-            { url: 'https://www.example.ie/og-image-03.jpg' },
-            { url: 'https://www.example.ie/og-image-04.jpg' },
           ],
         }}
       />
