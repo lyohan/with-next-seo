@@ -2,24 +2,19 @@ import { ArticleJsonLd } from 'next-seo'
 
 // See all available JSON-LD here:
 // https://github.com/garmeeh/next-seo#json-ld
+
+import Head from 'next/head'
+
 export default function JsonLd() {
   return (
     <div>
-      <ArticleJsonLd
-        url="https://example.com/article"
-        title="Article headline"
-        images={[
-          'https://example.com/photos/1x1/photo.jpg',
-          'https://example.com/photos/4x3/photo.jpg',
-          'https://example.com/photos/16x9/photo.jpg',
-        ]}
-        datePublished="2015-02-05T08:00:00+08:00"
-        dateModified="2015-02-05T09:00:00+08:00"
-        authorName="Jane Blogs"
-        publisherName="Mary Blogs"
-        publisherLogo="https://www.example.com/photos/logo.jpg"
-        description="This is a mighty good description of this article."
-      />
+      <Head>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="PROJECT LION : 프로젝트라이언" />
+        <meta property="og:url" content="https://projectlion.io/" />
+        <meta property="og:description" content="멋쟁이사자처럼이 만드는 새로운 교육 플랫폼" />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1634057006528-dce9553adee6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" />
+      </Head>
       <h1>JSON-LD Added to Page</h1>
       <p>
         Take a look at the head to see what has been added, you are looking for
