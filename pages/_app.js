@@ -25,10 +25,10 @@ export default function MyApp({ Component, pageProps, data }) {
   )
 }
 
-MyApp.getInitialProps = async (appContext) => {
-  // calls page's `getInitialProps` and fills `appProps.pageProps`
-  const appProps = await App.getInitialProps(appContext);
-  const { data } = await axios.get('http://api.icndb.com/jokes/random')
+// MyApp.getInitialProps = async (appContext) => {
+//   // calls page's `getInitialProps` and fills `appProps.pageProps`
+//   const appProps = await App.getInitialProps(appContext);
+//   const { data } = await axios.get('http://api.icndb.com/jokes/random')
 
-  return { ...appProps, data }
-}
+//   return { ...appProps, data }
+// }

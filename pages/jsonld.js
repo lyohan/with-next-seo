@@ -18,6 +18,7 @@ export default function JsonLd() {
       <h1>JSON-LD Added to Page</h1>
       <p>
         _app getinitailProps 메타태그 테스트....
+        initialProps 제거 테스트
       </p>
     </div>
   )
