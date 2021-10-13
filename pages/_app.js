@@ -7,12 +7,19 @@ import axios from 'axios'
 import { DefaultSeo } from 'next-seo'
 import App from 'next/app'
 import SEO from '../next-seo.config'
+import Head from 'next/head'
 
 export default function MyApp({ Component, pageProps, data }) {
   return (
     /* Here we call NextSeo and pass our default configuration to it  */
     <>
-      <DefaultSeo {...SEO} />
+      <Head>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="_app 메타태그야" />
+        <meta property="og:url" content="https://naver.com/" />
+        <meta property="og:description" content="이거슨 _app.js 루트의 메타 디스크립션" />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1634053605092-f34639dc76db?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" />
+      </Head>
       <Component {...pageProps} />
     </>
   )
